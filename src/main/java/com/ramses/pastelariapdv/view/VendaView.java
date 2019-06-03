@@ -1,12 +1,12 @@
-package com.grupo8.perfumariapdv.view;
+package com.ramses.pastelariapdv.view;
 
-import com.grupo8.perfumariapdv.controller.ClienteController;
-import com.grupo8.perfumariapdv.controller.VendaController;
-import com.grupo8.perfumariapdv.fonts.FontManager;
-import com.grupo8.perfumariapdv.model.Cliente;
-import com.grupo8.perfumariapdv.model.Produto;
-import com.grupo8.perfumariapdv.model.Validacao;
-import com.grupo8.perfumariapdv.model.Venda;
+import com.ramses.pastelariapdv.controller.ClienteController;
+import com.ramses.pastelariapdv.controller.VendaController;
+import com.ramses.pastelariapdv.fonts.FontManager;
+import com.ramses.pastelariapdv.model.Cliente;
+import com.ramses.pastelariapdv.model.Produto;
+import com.ramses.pastelariapdv.model.Validacao;
+import com.ramses.pastelariapdv.model.Venda;
 import java.awt.Color;
 import java.awt.Font;
 import java.util.Date;

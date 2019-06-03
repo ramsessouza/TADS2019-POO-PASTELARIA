@@ -1,4 +1,4 @@
-package com.grupo8.perfumariapdv.model;
+package com.ramses.pastelariapdv.model;
 
 import java.util.ArrayList;
 import java.util.Date;

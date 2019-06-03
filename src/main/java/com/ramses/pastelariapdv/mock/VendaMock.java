@@ -1,6 +1,6 @@
-package com.grupo8.perfumariapdv.mock;
+package com.ramses.pastelariapdv.mock;
 
-import com.grupo8.perfumariapdv.model.Venda;
+import com.ramses.pastelariapdv.model.Venda;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

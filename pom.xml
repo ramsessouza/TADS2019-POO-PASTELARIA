@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ramses</groupId>
-    <artifactId>PerfumariaPDV</artifactId>
+    <artifactId>PastelariaPDV</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     
@@ -14,22 +14,6 @@
         <developer>
             <id>Ramses</id>
             <name>Ramsés Carneiro de Souza</name>
-        </developer>
-        <developer>
-            <id>Debora</id>
-            <name>Debora Gomes</name>
-        </developer>
-        <developer>
-            <id>Victor</id>
-            <name>Victor</name>
-        </developer>
-        <developer>
-            <id>Gabriela</id>
-            <name>Gabriela Annibal Yamamoto</name>
-        </developer>
-        <developer>
-            <id>Veronica</id>
-            <name>Veronica</name>
         </developer>
     </developers>
     
@@ -61,7 +45,7 @@
             <version>0.2.1</version>
         </dependency>
     </dependencies>
-    <name>PerfumariaPDV</name>
+    <name>PastelariaPDV</name>
     <repositories>
         <repository>
             <id>unknown-jars-temp-repo</id>

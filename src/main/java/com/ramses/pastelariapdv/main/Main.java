@@ -1,7 +1,7 @@
-package com.grupo8.perfumariapdv.main;
+package com.ramses.pastelariapdv.main;
 
-import com.grupo8.perfumariapdv.fonts.FontManager;
-import com.grupo8.perfumariapdv.view.MenuView;
+import com.ramses.pastelariapdv.fonts.FontManager;
+import com.ramses.pastelariapdv.view.MenuView;
 import java.awt.Font;
 import javax.swing.UIManager;
 

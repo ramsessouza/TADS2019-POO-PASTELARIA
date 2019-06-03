@@ -1,7 +1,7 @@
-package com.grupo8.perfumariapdv.controller;
+package com.ramses.pastelariapdv.controller;
 
-import com.grupo8.perfumariapdv.mock.VendaMock;
-import com.grupo8.perfumariapdv.model.Venda;
+import com.ramses.pastelariapdv.mock.VendaMock;
+import com.ramses.pastelariapdv.model.Venda;
 import java.util.Date;
 import java.util.List;
 

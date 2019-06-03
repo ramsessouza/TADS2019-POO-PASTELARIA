@@ -1,9 +1,9 @@
-package com.grupo8.perfumariapdv.view;
+package com.ramses.pastelariapdv.view;
 
-import com.grupo8.perfumariapdv.model.Produto;
-import com.grupo8.perfumariapdv.model.Validacao;
-import com.grupo8.perfumariapdv.controller.ProdutoController;
-import com.grupo8.perfumariapdv.fonts.FontManager;
+import com.ramses.pastelariapdv.model.Produto;
+import com.ramses.pastelariapdv.model.Validacao;
+import com.ramses.pastelariapdv.controller.ProdutoController;
+import com.ramses.pastelariapdv.fonts.FontManager;
 import java.awt.Font;
 import javax.swing.JOptionPane;
 

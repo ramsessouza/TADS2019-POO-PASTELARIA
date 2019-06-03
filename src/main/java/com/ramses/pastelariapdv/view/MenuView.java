@@ -1,6 +1,6 @@
-package com.grupo8.perfumariapdv.view;
+package com.ramses.pastelariapdv.view;
 
-import com.grupo8.perfumariapdv.fonts.FontManager;
+import com.ramses.pastelariapdv.fonts.FontManager;
 import java.awt.Font;
 import java.beans.PropertyVetoException;
 import java.util.logging.Level;
@@ -48,7 +48,6 @@ public class MenuView extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("PerfumariaPDV 1.0");
         setBackground(new java.awt.Color(255, 255, 255));
-        setMaximumSize(new java.awt.Dimension(1024, 560));
         setMinimumSize(new java.awt.Dimension(1024, 560));
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {

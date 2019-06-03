@@ -1,7 +1,7 @@
-package com.grupo8.perfumariapdv.controller;
+package com.ramses.pastelariapdv.controller;
 
-import com.grupo8.perfumariapdv.mock.ClienteMock;
-import com.grupo8.perfumariapdv.model.Cliente;
+import com.ramses.pastelariapdv.mock.ClienteMock;
+import com.ramses.pastelariapdv.model.Cliente;
 import java.util.List;
 
 public class ClienteController {
