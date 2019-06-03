@@ -106,7 +106,7 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
 
         cboCategoria.setBackground(java.awt.Color.white);
         cboCategoria.setForeground(new java.awt.Color(0, 0, 0));
-        cboCategoria.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "Higiene", "Cosmeticos", "Utencílios", "Maquiagem" }));
+        cboCategoria.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "  ", "Pasteis Doce", "Pasteis Salgado", "Salgados", "Pasteis Português", "Pasteis Argentino", "Pasteis de Feira" }));
         cboCategoria.setPreferredSize(new java.awt.Dimension(95, 22));
 
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
@@ -143,7 +143,7 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
         txtValor.setPreferredSize(new java.awt.Dimension(4, 22));
 
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Descrição");
+        jLabel1.setText("Ingredientes");
 
         txtDescricao.setBackground(java.awt.Color.white);
         txtDescricao.setColumns(20);

@@ -1,8 +1,7 @@
 package com.ramses.pastelariapdv.model;
 
-public class Cliente {
-    private Integer id;
-    private String nome;
+public class Cliente extends Pessoa{
+    
     private String cpf;
     private String sexo;
     private String estadoCivil;
@@ -16,22 +15,6 @@ public class Cliente {
     private String telefoneCelular;
     private String telefoneOutros;
     private String observacoes;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public String getCpf() {
         return cpf;

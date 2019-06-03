@@ -25,7 +25,7 @@ public class MenuView extends javax.swing.JFrame {
 
         jpTudo = new javax.swing.JPanel();
         jpCabecalho = new javax.swing.JPanel();
-        lbGrupo8 = new javax.swing.JLabel();
+        lbLogoCabecalho = new javax.swing.JLabel();
         btnSair = new javax.swing.JButton();
         lbRelogio = new javax.swing.JLabel();
         jpBotoes = new javax.swing.JPanel();
@@ -39,14 +39,12 @@ public class MenuView extends javax.swing.JFrame {
         btnCadastroCliente = new javax.swing.JButton();
         lbConsultaCliente = new javax.swing.JLabel();
         btnConsultaCliente = new javax.swing.JButton();
-        lbRelatorioVendas = new javax.swing.JLabel();
-        btnRelatorioVendas = new javax.swing.JButton();
         lbLogo = new javax.swing.JLabel();
         jpCorpo = new javax.swing.JPanel();
         dskPainelPrincipal = new javax.swing.JDesktopPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("PerfumariaPDV 1.0");
+        setTitle("PastelariaPDV 1.0");
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(1024, 560));
         setResizable(false);
@@ -66,7 +64,8 @@ public class MenuView extends javax.swing.JFrame {
         jpCabecalho.setMinimumSize(new java.awt.Dimension(1024, 40));
         jpCabecalho.setPreferredSize(new java.awt.Dimension(1024, 40));
 
-        lbGrupo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/groupo8 180x30.png"))); // NOI18N
+        lbLogoCabecalho.setForeground(new java.awt.Color(255, 255, 255));
+        lbLogoCabecalho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logo_cabecalho 180x30.png"))); // NOI18N
 
         btnSair.setBackground(new java.awt.Color(17, 128, 216));
         btnSair.setFont(new java.awt.Font("Futura PT", 0, 16)); // NOI18N
@@ -81,7 +80,7 @@ public class MenuView extends javax.swing.JFrame {
 
         lbRelogio.setBackground(new java.awt.Color(17, 128, 216));
         lbRelogio.setForeground(new java.awt.Color(255, 255, 255));
-        lbRelogio.setText("03/05/2019 12:35:43");
+        lbRelogio.setText("03/06/2019");
 
         javax.swing.GroupLayout jpCabecalhoLayout = new javax.swing.GroupLayout(jpCabecalho);
         jpCabecalho.setLayout(jpCabecalhoLayout);
@@ -89,8 +88,8 @@ public class MenuView extends javax.swing.JFrame {
             jpCabecalhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpCabecalhoLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(lbGrupo8, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 407, Short.MAX_VALUE)
+                .addComponent(lbLogoCabecalho, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 403, Short.MAX_VALUE)
                 .addComponent(lbRelogio)
                 .addGap(321, 321, 321)
                 .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -106,7 +105,7 @@ public class MenuView extends javax.swing.JFrame {
                         .addComponent(lbRelogio, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addComponent(lbGrupo8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lbLogoCabecalho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jpBotoes.setBackground(new java.awt.Color(102, 102, 102));
@@ -200,23 +199,6 @@ public class MenuView extends javax.swing.JFrame {
             }
         });
 
-        lbRelatorioVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/relatorio_vendas.png"))); // NOI18N
-        lbRelatorioVendas.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbRelatorioVendasMouseClicked(evt);
-            }
-        });
-
-        btnRelatorioVendas.setBackground(new java.awt.Color(102, 102, 102));
-        btnRelatorioVendas.setForeground(new java.awt.Color(255, 255, 255));
-        btnRelatorioVendas.setText("Relatório");
-        btnRelatorioVendas.setBorder(null);
-        btnRelatorioVendas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRelatorioVendasActionPerformed(evt);
-            }
-        });
-
         lbLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logo150x150.png"))); // NOI18N
 
         javax.swing.GroupLayout jpBotoesLayout = new javax.swing.GroupLayout(jpBotoes);
@@ -226,25 +208,25 @@ public class MenuView extends javax.swing.JFrame {
             .addGroup(jpBotoesLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jpBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbVenda, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbCadastroProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbConsultaProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbCadastroCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbConsultaCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbRelatorioVendas, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jpBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(btnCadastroProduto)
-                        .addComponent(btnConsultaCliente, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(btnVenda, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(btnCadastroCliente, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(btnConsultaProduto)
-                    .addComponent(btnRelatorioVendas))
-                .addGap(19, 19, 19))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpBotoesLayout.createSequentialGroup()
-                .addComponent(lbLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                    .addGroup(jpBotoesLayout.createSequentialGroup()
+                        .addComponent(lbLogo)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jpBotoesLayout.createSequentialGroup()
+                        .addGroup(jpBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbVenda, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbCadastroProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbConsultaProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbCadastroCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbConsultaCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jpBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jpBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btnCadastroProduto)
+                                .addComponent(btnConsultaCliente, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(btnVenda, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(btnCadastroCliente, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(btnConsultaProduto))
+                        .addGap(19, 19, 19))))
         );
         jpBotoesLayout.setVerticalGroup(
             jpBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -273,13 +255,9 @@ public class MenuView extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(btnConsultaCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(lbConsultaCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jpBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnRelatorioVendas, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbRelatorioVendas, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addGap(30, 30, 30)
                 .addComponent(lbLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(67, Short.MAX_VALUE))
         );
 
         jpCorpo.setMaximumSize(new java.awt.Dimension(853, 514));
@@ -633,11 +611,6 @@ public class MenuView extends javax.swing.JFrame {
         consultarCliente();
     }//GEN-LAST:event_btnConsultaClienteActionPerformed
     
-    //RELATORIO VENDAS
-    private void btnRelatorioVendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRelatorioVendasActionPerformed
-        relatorioVendas();
-    }//GEN-LAST:event_btnRelatorioVendasActionPerformed
-
     //VENDA
     private void btnVendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVendaActionPerformed
         telaVenda();
@@ -654,7 +627,7 @@ public class MenuView extends javax.swing.JFrame {
         btnCadastroProduto.setFont(futuraPT14);
         btnConsultaProduto.setFont(futuraPT14);
         btnVenda.setFont(futuraPT14);
-        btnRelatorioVendas.setFont(futuraPT14);
+        //btnRelatorioVendas.setFont(futuraPT14);
         lbRelogio.setFont(futuraPT16);
     }//GEN-LAST:event_formWindowOpened
 //GEN-FIRST:event_btnSairActionPerformed
@@ -684,11 +657,7 @@ public class MenuView extends javax.swing.JFrame {
         consultarCliente();
     }//GEN-LAST:event_lbConsultaClienteMouseClicked
 
-    //RELATORIO VENDAS
-    private void lbRelatorioVendasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbRelatorioVendasMouseClicked
-        relatorioVendas();
-    }//GEN-LAST:event_lbRelatorioVendasMouseClicked
-    
+   
 //==============================================================================
 //NAO MEXER
 //==============================================================================  
@@ -697,7 +666,6 @@ public class MenuView extends javax.swing.JFrame {
     private javax.swing.JButton btnCadastroProduto;
     private javax.swing.JButton btnConsultaCliente;
     private javax.swing.JButton btnConsultaProduto;
-    private javax.swing.JButton btnRelatorioVendas;
     private javax.swing.JButton btnSair;
     private javax.swing.JButton btnVenda;
     private javax.swing.JDesktopPane dskPainelPrincipal;
@@ -709,9 +677,8 @@ public class MenuView extends javax.swing.JFrame {
     private javax.swing.JLabel lbCadastroProduto;
     private javax.swing.JLabel lbConsultaCliente;
     private javax.swing.JLabel lbConsultaProduto;
-    private javax.swing.JLabel lbGrupo8;
     private javax.swing.JLabel lbLogo;
-    private javax.swing.JLabel lbRelatorioVendas;
+    private javax.swing.JLabel lbLogoCabecalho;
     private javax.swing.JLabel lbRelogio;
     private javax.swing.JLabel lbVenda;
     // End of variables declaration//GEN-END:variables
