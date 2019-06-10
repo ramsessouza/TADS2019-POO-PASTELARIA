@@ -1,7 +1,7 @@
 package com.ramses.pastelariapdv.controller;
 
 import com.ramses.pastelariapdv.db.ClienteDao;
-import com.ramses.pastelariapdv.mock.ClienteMock;
+//import com.ramses.pastelariapdv.mock.ClienteMock;
 import com.ramses.pastelariapdv.model.Cliente;
 import java.util.List;
 

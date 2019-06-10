@@ -1,7 +1,7 @@
 package com.ramses.pastelariapdv.controller;
 
 import com.ramses.pastelariapdv.db.ProdutoDao;
-import com.ramses.pastelariapdv.mock.ProdutoMock;
+//import com.ramses.pastelariapdv.mock.ProdutoMock;
 import com.ramses.pastelariapdv.model.Produto;
 import java.util.List;
 
