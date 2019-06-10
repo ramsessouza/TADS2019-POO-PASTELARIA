@@ -26,7 +26,7 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
         jLabel2 = new javax.swing.JLabel();
         txtNome = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        cboCategoria = new javax.swing.JComboBox<String>();
+        cboCategoria = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         txtQuantidade = new javax.swing.JFormattedTextField();
         jLabel5 = new javax.swing.JLabel();
@@ -37,7 +37,7 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
         txtValor = new javax.swing.JFormattedTextField();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        txtDescricao = new javax.swing.JTextArea();
+        txtIngredientes = new javax.swing.JTextArea();
         btnSair = new javax.swing.JButton();
         btnSalvar = new javax.swing.JButton();
         lbPreencherAutomatico = new javax.swing.JLabel();
@@ -106,7 +106,7 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
 
         cboCategoria.setBackground(java.awt.Color.white);
         cboCategoria.setForeground(new java.awt.Color(0, 0, 0));
-        cboCategoria.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "  ", "Pasteis Doce", "Pasteis Salgado", "Salgados", "Pasteis Português", "Pasteis Argentino", "Pasteis de Feira" }));
+        cboCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "  ", "Pasteis Doce", "Pasteis Salgado", "Salgados", "Pasteis Português", "Pasteis Argentino", "Pasteis de Feira" }));
         cboCategoria.setPreferredSize(new java.awt.Dimension(95, 22));
 
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
@@ -145,10 +145,10 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Ingredientes");
 
-        txtDescricao.setBackground(java.awt.Color.white);
-        txtDescricao.setColumns(20);
-        txtDescricao.setRows(5);
-        jScrollPane1.setViewportView(txtDescricao);
+        txtIngredientes.setBackground(java.awt.Color.white);
+        txtIngredientes.setColumns(20);
+        txtIngredientes.setRows(5);
+        jScrollPane1.setViewportView(txtIngredientes);
 
         btnSair.setBackground(new java.awt.Color(102, 102, 102));
         btnSair.setForeground(new java.awt.Color(255, 255, 255));
@@ -328,7 +328,7 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
         txtQuantidade.setText("");
         txtCusto.setText("");
         txtValor.setText("");
-        txtDescricao.setText("");
+        txtIngredientes.setText("");
     }
     
     //CARREGA DADOS DO PRODUTO
@@ -353,7 +353,7 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
             txtCusto.setValue(produto.getCusto());
             txtValor.setValue(produto.getValor());
             
-            txtDescricao.setText(produto.getDescricao());
+            txtIngredientes.setText(produto.getIngredientes());
         }
     }
 
@@ -393,7 +393,7 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
                 produto.setQuantidade(Integer.parseInt(txtQuantidade.getText()));
                 produto.setCusto(Float.parseFloat(txtCusto.getText().replaceAll(",", ".")));
                 produto.setValor(Float.parseFloat(txtValor.getText().replaceAll(",", ".")));
-                produto.setDescricao(txtDescricao.getText());
+                produto.setIngredientes(txtIngredientes.getText());
 
                 if (!modoEdicao)//for modo de cadastro
                 {
@@ -482,7 +482,7 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
         txtQuantidade.setValue(20);
         txtCusto.setValue(19);
         txtValor.setValue(24.50);
-        txtDescricao.setText("Lote com data de validade para 07/02/2020");
+        txtIngredientes.setText("Lote com data de validade para 07/02/2020");
         
     }//GEN-LAST:event_lbPreencherAutomaticoMouseClicked
 
@@ -506,7 +506,7 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lbCabecalho;
     private javax.swing.JLabel lbPreencherAutomatico;
     private javax.swing.JFormattedTextField txtCusto;
-    private javax.swing.JTextArea txtDescricao;
+    private javax.swing.JTextArea txtIngredientes;
     private javax.swing.JTextField txtNome;
     private javax.swing.JFormattedTextField txtQuantidade;
     private javax.swing.JFormattedTextField txtValor;

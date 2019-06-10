@@ -127,8 +127,8 @@ public class ProdutoMock
                             produtoAtualizado.getCusto());
                     produtoDesatualizado.setValor(
                             produtoAtualizado.getValor());
-                    produtoDesatualizado.setDescricao(
-                            produtoAtualizado.getDescricao());
+                    produtoDesatualizado.setIngredientes(
+                            produtoAtualizado.getIngredientes());
                     //sinaliza que produto foi atualizado para sair da lista
                     atualizacao = true;
                 }

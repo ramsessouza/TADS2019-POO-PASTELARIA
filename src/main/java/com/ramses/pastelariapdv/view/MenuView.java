@@ -1,6 +1,7 @@
 package com.ramses.pastelariapdv.view;
 
 import com.ramses.pastelariapdv.fonts.FontManager;
+import com.ramses.pastelariapdv.relogio.AtualizadorHorario;
 import java.awt.Font;
 import java.beans.PropertyVetoException;
 import java.util.logging.Level;
@@ -15,6 +16,7 @@ public class MenuView extends javax.swing.JFrame {
     //INICIALIZAÇÃO DOS COMPONENTES
     public MenuView() {
         initComponents();
+        AtualizadorHorario.start(lbRelogio);
         setLocationRelativeTo(null);
     }
     

@@ -8,8 +8,7 @@ public class Produto
     private Integer quantidade;
     private Float custo;
     private Float valor;
-    private Float valorTotal;
-    private String descricao;
+    private String ingredientes;
 
     public Integer getId() {
         return id;
@@ -59,12 +58,12 @@ public class Produto
         this.valor = Valor;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getIngredientes() {
+        return ingredientes;
     }
 
-    public void setDescricao(String Descricao) {
-        this.descricao = Descricao;
+    public void setIngredientes(String Descricao) {
+        this.ingredientes = Descricao;
     }
     
 }
