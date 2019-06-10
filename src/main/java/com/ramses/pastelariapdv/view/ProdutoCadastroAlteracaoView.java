@@ -477,12 +477,12 @@ public class ProdutoCadastroAlteracaoView extends javax.swing.JInternalFrame {
 
     //PREENCHIMENTO AUTOMATICO
     private void lbPreencherAutomaticoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbPreencherAutomaticoMouseClicked
-        txtNome.setText("Shampoo");
-        cboCategoria.setSelectedIndex(1);
+        txtNome.setText("Calafrango");
+        cboCategoria.setSelectedIndex(2);
         txtQuantidade.setValue(20);
-        txtCusto.setValue(19);
-        txtValor.setValue(24.50);
-        txtIngredientes.setText("Lote com data de validade para 07/02/2020");
+        txtCusto.setValue(4);
+        txtValor.setValue(9.5);
+        txtIngredientes.setText("Frango, Calabresa e Mussarella");
         
     }//GEN-LAST:event_lbPreencherAutomaticoMouseClicked
 
