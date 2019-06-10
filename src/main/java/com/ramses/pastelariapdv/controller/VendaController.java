@@ -1,5 +1,6 @@
 package com.ramses.pastelariapdv.controller;
 
+import com.ramses.pastelariapdv.db.VendaDao;
 import com.ramses.pastelariapdv.mock.VendaMock;
 import com.ramses.pastelariapdv.model.Venda;
 import java.util.Date;
@@ -14,33 +15,14 @@ public class VendaController {
         
         //Tenta fazer a insercao
         try{
-            VendaMock.salvar(venda);
+            //VendaMock.salvar(venda);
+            VendaDao.salvar(venda);
         }catch (Exception e){
             e.printStackTrace();
             resposta = "Erro na fonte de dados";
         }
         
         return resposta;
-    }
-    
-    //PROCURAR/LISTAR
-    public static List<Venda> procurar(Date dataInicio, Date dataFim){
-        List<Venda> listaResposta = null;
-        
-        //Tenta fazer a busca dos dados 
-        try{
-        
-            if (dataInicio == null || dataFim == null) {
-                listaResposta = VendaMock.listar();
-            } else {
-                listaResposta = VendaMock.procurar(dataInicio, dataFim);
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return listaResposta;
     }
     
     //OBTER
@@ -52,7 +34,8 @@ public class VendaController {
         try 
         {
             //tenta obter o venda procurado
-            venda = VendaMock.obterUltima();
+            //venda = VendaMock.obterUltima();
+            venda = VendaDao.obterUltima();
         } 
         catch (Exception e) 
         {

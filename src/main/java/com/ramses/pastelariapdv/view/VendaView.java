@@ -549,7 +549,7 @@ private Venda venda;
             lbCabecalho.setText("Venda nº 1");
         }
         else{
-            ultimaVenda += 2;
+            ultimaVenda += 1;
             lbCabecalho.setText("Venda nº "+ultimaVenda);
         }
     }
@@ -746,7 +746,7 @@ private Venda venda;
             //Cada dado na coluna correspondente
             dadosTabela[0] = produto.getId();
             dadosTabela[1] = produto.getNome();
-            dadosTabela[2] = produto.getQuantidade();
+            dadosTabela[2] = (Integer) jsProdutoQuantidade.getValue();
             dadosTabela[3] = produto.getValor();
             dadosTabela[4] = Float.parseFloat(txtProdutoValorTotal.getText());
             
@@ -848,8 +848,10 @@ private Venda venda;
             produto.setQuantidade((Integer) tabelaVenda.getValueAt(i, 2));
             produto.setValor((Float) tabelaVenda.getValueAt(i, 3));
             valorTotal = produto.getQuantidade()*produto.getValor();
+            
+            venda.getItensVenda().add(produto);
         }
-        venda.getItensVenda().add(produto);
+        
 
         //coloca dados do cliente da venda na instancia de venda
         venda.getCliente().setNome(txtClienteNomeInfo.getText());
@@ -873,9 +875,7 @@ private Venda venda;
                         "Subtotal da compra R$"+venda.getSubtotal()+"\n"+
                         "Total pago em Dinheiro R$"+venda.getPagamentoDinheiro()+"\n"+
                         "Total pago em Cartão R$"+venda.getPagamentoCartao()+"\n"+
-                        "Seu troco R$"+troco+"\n\n"+
-                        "Agora você pode consultar sua venda em:\n"+ 
-                        "Menu > Relatório",
+                        "Seu troco R$"+troco,
                     "Informe de registro",
                     JOptionPane.INFORMATION_MESSAGE);
 

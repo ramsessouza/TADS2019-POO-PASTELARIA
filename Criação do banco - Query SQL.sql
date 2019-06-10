@@ -31,3 +31,15 @@ CREATE TABLE TBCLIENTES(
  observacoes varchar(500),
 primary key (id)
 );
+
+CREATE TABLE TBVENDAS(
+id int(10) not null,
+data TIMESTAMP,
+qtdItens int(10),
+subtotal decimal(8,2),
+pagamentoDinheiro decimal(8,2),
+pagamentoCartao decimal(8,2),
+nomeCliente varchar(50),
+cpfCliente varchar(15),
+primary key (id)
+);    
