@@ -33,7 +33,7 @@ primary key (id)
 );
 
 CREATE TABLE TBVENDAS(
-id int(10) not null,
+id int(10) not null auto_increment,
 data TIMESTAMP,
 qtdItens int(10),
 subtotal decimal(8,2),
