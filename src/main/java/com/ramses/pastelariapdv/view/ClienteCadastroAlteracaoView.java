@@ -511,7 +511,7 @@ public class ClienteCadastroAlteracaoView extends javax.swing.JInternalFrame {
             txtDataNascimento.setValue(cliente.getDataNascimento());
             
             //Para radio buttons fazer a validação abaixo
-            if (cliente.getSexo() == rdbMasculino.getText()){
+            if (cliente.getSexo().equalsIgnoreCase(rdbMasculino.getText())){
                 rdbMasculino.setSelected(true);
            }else{
                 rdbFeminino.setSelected(true);
